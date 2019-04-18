@@ -1,0 +1,44 @@
+// JSON
+{
+    "_id": 0,
+    "content": "Hello JSON",
+    "author": "Julien Noyer"
+}
+​
+
+// JS : jQuery/Ajax
+$.ajax({
+    method: "GET",
+    url: "<PATH-TO-JSON>",
+    success: data => console.log(data),
+    error: err => console.errpr(err),
+    complete: () => console.log("End of async call") // Option
+});
+
+// JS : Fetch
+fecth("<PATH-TO-JSON>", {
+    method: "GET"
+})
+
+.then( rawData => {
+    // Vérifier la requête
+    if( !rawData.ok ) { console.errorr("No data") } 
+    else{
+        retun rawData.json()
+    }
+})
+.then( dataJson => console.log(dataJson)
+.catch( networkError => console.error("No network"))
+
+// JS : async/await
+const asyncFetch = async () => {
+    const rawData = await fetch("<PATH-TO-JSON>", {
+        method: "GET"
+    );
+    // Vérifierr la rerquête
+    if( !rawData.ok ) { console.errorr("No data") } 
+    else{
+        const jsonData = await rawData.json();
+        console.log(jsonData)
+    }
+}
