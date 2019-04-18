@@ -1,0 +1,13 @@
+# On suit les liens symboliques
+Options +FollowSymlinks
+# Activation du mod rewrite d'Apache
+RewriteEngine On
+
+# Réécriture des URL des articles
+# RewriteRule ^/articles/lire-([0-9]+)-([a-z0-9\-]+)\.html$ /index.php?rub=lireArticle&id=$1
+
+RewriteRule ^index$ ./?action=home
+RewriteRule ^actualites$ ./?action=actualites
+RewriteRule ^evenements$ ./?action=evenements
+RewriteRule ^films$ ./?action=films
+RewriteRule ^palmares$ ./?action=palmares [L]

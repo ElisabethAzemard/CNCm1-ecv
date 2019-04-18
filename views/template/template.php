@@ -6,7 +6,19 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Document</title>
 	</head>
+
 	<body>
 		
+		<?php
+
+			require_once('header.php');
+
+			require_once('views/' . $directory . '/' . $view . '.php');
+
+			require_once('footer.php');
+
+		?>
+
 	</body>
+
 </html>
