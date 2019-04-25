@@ -11,14 +11,15 @@
 		
 		<?php
 
-			require_once('header.php');
+			include_once('header.php');
 
-			require_once('views/' . $directory . '/' . $view . '.php');
+			include_once('views/' . $directory . '/' . $view . '.php');
 
-			require_once('footer.php');
+			include_once('footer.php');
 
 		?>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="http://localhost/festival/assets/js/main.js"></script>
 	</body>
-
 </html>

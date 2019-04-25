@@ -7,7 +7,8 @@ RewriteEngine On
 # RewriteRule ^/articles/lire-([0-9]+)-([a-z0-9\-]+)\.html$ /index.php?rub=lireArticle&id=$1
 
 RewriteRule ^index$ ./?action=home
-RewriteRule ^actualites$ ./?action=actualites
-RewriteRule ^evenements$ ./?action=evenements
-RewriteRule ^films$ ./?action=films
+RewriteRule ^news$ ./?action=news
+RewriteRule ^events$ ./?action=events
+RewriteRule ^movies$ ./?action=movies
+RewriteRule ^movies/([0-9]+)$ ./?action=movie_detail&id=$1%{QUERYSTRING}
 RewriteRule ^palmares$ ./?action=palmares [L]

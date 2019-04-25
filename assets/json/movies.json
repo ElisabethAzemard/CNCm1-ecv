@@ -1,0 +1,49 @@
+{
+    "movies": [
+        {
+            "_id": 1,
+            "name": "Acid Rain",
+            "director": "Tomasz POPAKUL"
+        },
+        {
+            "_id": 2,
+            "name": "Briljantsuse Demonstratsioon Neljas Vaatuses",
+            "director": "Lucija MRZLJAK, Morten TSINAKOV"
+        },
+        {
+            "_id": 3,
+            "name": "Bavure",
+            "director": "Donato SANSONE"
+        },
+        {
+            "_id": 4,
+            "name": "Bridge",
+            "director": "Di LIU"
+        },
+        {
+            "_id": 5,
+            "name": "Deszcz",
+            "director": "Piotr MILCZAREK"
+        },
+        {
+            "_id": 6,
+            "name": "Elu24",
+            "director": "Kristjan HOLM"
+        },
+        {
+            "_id": 7,
+            "name": "Flut",
+            "director": "Malte STEIN"
+        },
+        {
+            "_id": 8,
+            "name": "Girl in the Hallway",
+            "director": "Valerie BARNHART"
+        },
+        {
+            "_id": 9,
+            "name": "Gun Shop",
+            "director": "Patrick SMITH"
+        }
+    ]
+}

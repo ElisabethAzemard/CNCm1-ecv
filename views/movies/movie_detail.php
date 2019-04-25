@@ -1,0 +1,1 @@
+<div id="movie_detail" data-id-movie=<?php if(isset($_GET['id'])) echo $_GET['id'] ;?>></div>
