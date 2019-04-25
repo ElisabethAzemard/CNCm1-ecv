@@ -1,0 +1,41 @@
+body{
+    font-family: Roboto;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header img {
+    vertical-align: middle;
+    margin: 0 50px;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {   
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #333;
+}
