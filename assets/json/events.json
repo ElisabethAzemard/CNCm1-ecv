@@ -1,0 +1,16 @@
+{
+	"events": [
+		"name": String,
+		"type": String, // ["projection", "meeting", ""]
+		"duration": Datetime,
+		"description": String,
+		"url": String,
+		"startDate": Date,
+		"endDate": Date,
+		"movie": ID, //if type == "projection"
+		"performer": {
+			"familyName": String,
+			"givenName": String
+		}	
+	]
+}

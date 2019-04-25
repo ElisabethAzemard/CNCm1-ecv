@@ -3,47 +3,105 @@
         {
             "_id": 1,
             "name": "Acid Rain",
-            "director": "Tomasz POPAKUL"
+			"director": [
+				{
+					"familyName": "POPAKUL",
+					"givenName": "Tomasz"
+				}
+			],
+			"image": "Acid_rain.jpg"
         },
         {
             "_id": 2,
             "name": "Briljantsuse Demonstratsioon Neljas Vaatuses",
-            "director": "Lucija MRZLJAK, Morten TSINAKOV"
+			"director": [
+				{
+					"familyName": "MRZLJAK",
+					"givenName": "Lucija"
+				},
+				{
+					"familyName": "TSINAKOV",
+					"givenName": "Morten"
+				}
+			],
+			"image": "Briljantsuse.jpg"
         },
         {
             "_id": 3,
             "name": "Bavure",
-            "director": "Donato SANSONE"
+			"director": [
+				{
+					"familyName": "SANSONE",
+					"givenName": "Donato"
+				}
+			],
+			"image": "Bavure.jpg"
         },
         {
             "_id": 4,
             "name": "Bridge",
-            "director": "Di LIU"
+			"director": [
+				{
+					"familyName": "LIU",
+					"givenName": "Di"
+				}
+			],
+			"image": "Bridge.jpg"
         },
         {
             "_id": 5,
             "name": "Deszcz",
-            "director": "Piotr MILCZAREK"
+			"director": [
+				{
+					"familyName": "MILCZAREK",
+					"givenName": "Piotr"
+				}
+			],
+			"image": "Deszcz.png"
         },
         {
             "_id": 6,
             "name": "Elu24",
-            "director": "Kristjan HOLM"
+			"director": [
+				{
+					"familyName": "HOLM",
+					"givenName": "Kristjan"
+				}
+			],
+			"image": "Elu24.jpg"
         },
         {
             "_id": 7,
             "name": "Flut",
-            "director": "Malte STEIN"
+			"director": [
+				{
+					"familyName": "STEIN",
+					"givenName": "Malte"
+				}
+			],
+			"image": "Flut.jpg"
         },
         {
             "_id": 8,
             "name": "Girl in the Hallway",
-            "director": "Valerie BARNHART"
+			"director": [
+				{
+					"familyName": "BARNHART",
+					"givenName": "Valerie"
+				}
+			],
+			"image": "Girl_in-the_hallway.jpg"
         },
         {
             "_id": 9,
             "name": "Gun Shop",
-            "director": "Patrick SMITH"
+			"director": [
+				{
+					"familyName": "SMITH",
+					"givenName": "Patrick"
+				}
+			],
+			"image": "Gun_shop.jpg"
         }
     ]
 }

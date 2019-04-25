@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () =>
             success: data => {
                 $.each(data.movies, function(i, val)
                 {
-                    oneMovie = '<li><a href="movies/' + val._id + '">' + val.name + '</a></li>';
-                    $('#list_movies').append(oneMovie);
+                    oneMovie = '<li><a href="movies/' + val._id + '"><img src="./assets/img/' + val.image + '"><span>' + val.name + '</span></a></li>';
+                    $('#list_movies ul').append(oneMovie);
                 });
             },
             error: err => console.error(err),
@@ -35,8 +35,15 @@ document.addEventListener('DOMContentLoaded', () =>
                     }
                 });
 
-                let titleMovie = '<p>Titre original : <b>' + oneMovie.name + '</b></p>';
-                let realisationMovie = '<p>Réalisation : <b>' + oneMovie.director + '</b></p>';
+				let titleMovie = '<p>Titre original : <b>' + oneMovie.name + '</b></p>';
+				let directors = "";
+
+				$.each(oneMovie.director, function(i, val)
+				{
+					directors += val.givenName + ' ' + val.familyName + ', ';
+				});
+
+                let realisationMovie = '<p>Réalisation : <b>' + directors.substring(0, directors.length - 2) + '</b></p>';
 
                 $('#movie_detail').append(titleMovie);
                 $('#movie_detail').append(realisationMovie);

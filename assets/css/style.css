@@ -7,13 +7,14 @@ ul{
     padding: 0;
 }
 
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
+	color: #333;
 }
 
 header img {
     vertical-align: middle;
-    margin: 0 50px;
+    margin: 20px 50px;
 }
 
 nav {
@@ -30,12 +31,26 @@ nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {   
-    color: #333;
+nav ul li a {
     font-weight: bold;
 }
 
 nav ul li a.active {
     padding-bottom: 3px;
     border-bottom: 1px solid #333;
+}
+
+#list_movies ul li {
+	display: inline-block;
+	width: calc(100% / 3);
+	padding-bottom: 40px;
+}
+
+#list_movies ul li img {
+	width: 500px;
+}
+
+#list_movies ul li a {
+	display: block;
+	text-align: center;
 }
