@@ -4,15 +4,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Document</title>
-		<link rel="stylesheet" href="assets/css/style.css">
+		<title><?php echo $title . ' - Festival d\'Annecy'; ?></title>
+		<link rel="stylesheet" href="/festival/assets/css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	</head>
 
 	<body>
 		
 		<?php
-
+			
 			include_once('header.php');
 
 			include_once('views/' . $directory . '/' . $view . '.php');

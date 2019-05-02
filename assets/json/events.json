@@ -1,16 +1,11 @@
 {
 	"events": [
-		"name": String,
-		"type": String, // ["projection", "meeting", ""]
-		"duration": Datetime,
-		"description": String,
-		"url": String,
-		"startDate": Date,
-		"endDate": Date,
-		"movie": ID, //if type == "projection"
-		"performer": {
-			"familyName": String,
-			"givenName": String
-		}	
+		{
+			"_id": 1,
+			"name": " Mary et la Fleur de la sorcière",
+			"type": "projection",
+			"duration": "datetime",
+			"description": "L’animation japonaise est à l’honneur cette année au Festival d’Annecy ! Pour la célébrer, nous vous invitons à voyager dans l’univers onirique de Mary et la Fleur de la sorcière, premier long métrage de Studio Ponoc. Bien loin des clichés de la sorcière au chapeau pointu et au nez crochu, l’histoire débute avec Mary, une petite fille comme les autres, qui vient tout juste de déménager à la campagne chez sa grand-tante Charlotte. Au détour de ses promenades solitaires dans les champs et les forêts alentour, elle découvre une fleur à la couleur hypnotique et au pouvoir puissant, capable de faire d’elle une sorcière le temps d’une nuit – de quoi la mener jusqu’à Endor, célèbre école de magie nichée bien loin du commun des mortels, au-delà des nuages... Réalisé par Hiromasa Yonebayashi, derrière les créations du studio Ghibli Arrietty, le Petit Monde des chapardeurs et Souvenirs de Marnie, Mary et la Fleur de la sorcière nous transporte dans un monde qui nous semble familier, où tout est pourtant à découvrir. Balais, chat noir et sorcellerie… c’est parti pour une projection envoûtante !"
+		}
 	]
 }

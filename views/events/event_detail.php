@@ -1,0 +1,1 @@
+<div id="event_detail" data-id-event=<?php if(isset($_GET['id'])) echo $_GET['id'] ;?>></div>

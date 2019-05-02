@@ -1,21 +1,50 @@
 <?php
 
 	$route = [
-		'home' => '',
-		'news' => 'news',
-		'new_detail' => 'news',
-		'events' => 'events',
-		'event_detail' => 'events',
-		'movies' => 'movies',
-		'movie_detail' => 'movies',
-		'palmares' => 'palmares'
+		'home' => [
+			'route' => '',
+			'title' => 'Accueil'
+		],
+		'news' =>  [
+			'route' => 'news',
+			'title' => 'Actualités'
+		],
+		'new_detail' => [
+			'route' => 'news',
+			'title' => 'Détail Actualité'
+		],
+		'events' => [
+			'route' => 'events',
+			'title' => 'Evènements'
+		],
+		'event_detail' => [
+			'route' => 'events',
+			'title' => 'Détail Evènements'
+		],
+		'movies' => [
+			'route' => 'movies',
+			'title' => 'Films'
+		],
+		'movie_detail' => [
+			'route' => 'movies',
+			'title' => 'Détail Films'
+		],
+		'palmares' => [
+			'route' => 'palmares',
+			'title' => 'Palmarès'
+		]
 	];
 
-	if(isset($_GET['action'])) {
+	$GLOBALS['image'] = '/festival/assets/img/';
+
+	if(isset($_GET['action']))
+	{
 		$view = $_GET['action'];
-		$directory = $route[$view];
+		$title = $route[$view]['title'];
+		$directory = $route[$view]['route'];
 	}
-	else {
+	else
+	{
 		$view = 'home';
 		$directory = '';
     }
