@@ -2,7 +2,8 @@
     "movies": [
         {
             "_id": 1,
-            "name": "Acid Rain",
+			"name": "Acid Rain",
+			"category": "court_metrage",
 			"director": [
 				{
 					"familyName": "POPAKUL",
@@ -14,6 +15,7 @@
         {
             "_id": 2,
             "name": "Briljantsuse Demonstratsioon Neljas Vaatuses",
+			"category": "court_metrage",
 			"director": [
 				{
 					"familyName": "MRZLJAK",
@@ -29,6 +31,7 @@
         {
             "_id": 3,
             "name": "Bavure",
+			"category": "court_metrage",
 			"director": [
 				{
 					"familyName": "SANSONE",
@@ -40,6 +43,7 @@
         {
             "_id": 4,
             "name": "Bridge",
+			"category": "court_metrage",
 			"director": [
 				{
 					"familyName": "LIU",
@@ -47,21 +51,27 @@
 				}
 			],
 			"image": "Bridge.jpg"
-        },
-        {
+		},
+		{
             "_id": 5,
-            "name": "Deszcz",
+            "name": "Crisis Jung 'Despair'",
+			"category": "film_TV",
 			"director": [
 				{
-					"familyName": "MILCZAREK",
-					"givenName": "Piotr"
+					"familyName": "GAUBERT",
+					"givenName": "Baptiste"
+				},
+				{
+					"familyName": "HOARAU",
+					"givenName": "Jérémie"
 				}
 			],
-			"image": "Deszcz.png"
+			"image": "Crisis_jung_despair.png"
         },
         {
             "_id": 6,
             "name": "Elu24",
+			"category": "court_metrage",
 			"director": [
 				{
 					"familyName": "HOLM",
@@ -69,21 +79,27 @@
 				}
 			],
 			"image": "Elu24.jpg"
-        },
-        {
+		},
+		{
             "_id": 7,
-            "name": "Flut",
+            "name": "Ternet Ninja",
+			"category": "long_metrage",
 			"director": [
 				{
-					"familyName": "STEIN",
-					"givenName": "Malte"
+					"familyName": "MATTHESEN",
+					"givenName": "Anders"
+				},
+				{
+					"familyName": "CHRISTOFFERSEN",
+					"givenName": "Thorbjørn"
 				}
 			],
-			"image": "Flut.jpg"
+			"image": "Ternet_ninja.jpg"
         },
         {
             "_id": 8,
             "name": "Girl in the Hallway",
+			"category": "court_metrage",
 			"director": [
 				{
 					"familyName": "BARNHART",
@@ -95,6 +111,7 @@
         {
             "_id": 9,
             "name": "Gun Shop",
+			"category": "court_metrage",
 			"director": [
 				{
 					"familyName": "SMITH",
@@ -102,6 +119,30 @@
 				}
 			],
 			"image": "Gun_shop.jpg"
+		},
+        {
+            "_id": 10,
+            "name": "Flut",
+			"category": "court_metrage",
+			"director": [
+				{
+					"familyName": "STEIN",
+					"givenName": "Malte"
+				}
+			],
+			"image": "Flut.jpg"
+        },
+        {
+            "_id": 11,
+			"name": "Deszcz",
+			"category": "court_metrage",	
+			"director": [
+				{
+					"familyName": "MILCZAREK",
+					"givenName": "Piotr"
+				}
+			],
+			"image": "Deszcz.png"
         }
     ]
 }

@@ -11,8 +11,36 @@ document.addEventListener('DOMContentLoaded', () =>
             success: data => {
                 $.each(data.movies, function(i, val)
                 {
-                    oneMovie = '<li><a href="movies/' + val._id + '"><img src="' + imagePath + val.image + '"><span>' + val.name + '</span></a></li>';
-                    $('#list_movies ul').append(oneMovie);
+					let class_name = "";
+					let text_category = "";
+
+					switch(val.category)
+					{
+						case 'court_metrage':
+							class_name = 'court_metrage';
+							text_category = 'Court Métrage';
+							break;
+						
+						case 'long_metrage':
+							class_name = 'long_metrage';
+							text_category = 'Long Métrage';
+							break;
+							
+						case 'film_TV':
+							class_name = 'film_TV';
+							text_category = 'Film TV';
+							break;
+					}
+
+					oneMovie = '<div class="oneMovie">';
+					oneMovie += '<a href="movies/' + val._id + '">';
+					oneMovie += '<span class="category_movie ' + class_name +'">' + text_category + '</span>';
+					oneMovie += '<span class="like_movie"><img src="' + imagePath + '/like.png" alt="Like"></span>';
+					oneMovie += '<span class="title_movie">' + val.name + '</span>';
+					oneMovie += '<div class="background_image" style="background:url(' + imagePath + val.image + ') center center no-repeat"></div>';
+					oneMovie += '</a>';
+					oneMovie += '</div>';
+                    $('#list_movies').append(oneMovie);
                 });
             },
             error: err => console.error(err),
