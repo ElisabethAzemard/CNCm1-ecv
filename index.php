@@ -46,6 +46,7 @@
 	else
 	{
 		$view = 'home';
+		$title = 'Accueil';
 		$directory = '';
     }
 

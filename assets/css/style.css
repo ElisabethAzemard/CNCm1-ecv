@@ -108,15 +108,15 @@ nav ul li a.active {
     border-bottom: 1px solid #333;
 }
 
-.court_metrage {
+.court_metrage:not(.oneMovie) {
 	background: linear-gradient(100.47deg, #F6D365 0%, #FDA085 100%);
 }
 
-.long_metrage {
+.long_metrage:not(.oneMovie) {
 	background: linear-gradient(90deg, #8BF665 0%, #FDD485 100%);
 }
 
-.film_TV {
+.film_TV:not(.oneMovie) {
 	background: linear-gradient(90deg, #7165F6 0%, #85A7FD 100%);
 }
 
@@ -126,7 +126,7 @@ nav ul li a.active {
 	margin: 20px 0 60px 0;
 }
 
-.categories div {
+.categories > div {
 	display: inline-block;
 	font-family: Roboto;
 	font-style: normal;
@@ -138,16 +138,24 @@ nav ul li a.active {
 	height: 120px;
 	vertical-align: top;
 	margin: 0 40px;
+	padding: 10px;
 	border-radius: 15px;
+	cursor: pointer;
 }
 
-.categories div img {
+.categories > div img {
 	width: 45px;
 	height: 45px;
 }
 
-.categories div:nth-child(1) {
+.categories > div:nth-child(1) {
 	background: linear-gradient(135deg, #B665F6 0%, #FD8585 100%);
+}
+
+.categories > div > div {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #list_movies {
@@ -156,7 +164,7 @@ nav ul li a.active {
 
 #list_movies .oneMovie {
 	display: inline-block;
-	width: calc((100% - 120px) / 3);
+	width: calc((100% - 220px) / 3);
 	height: 200px;
 	margin: 20px;
 }

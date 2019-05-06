@@ -7,6 +7,7 @@
 		<title><?php echo $title . ' - Festival d\'Annecy'; ?></title>
 		<link rel="stylesheet" href="/festival/assets/css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	</head>
 
 	<body>
@@ -22,6 +23,8 @@
 		?>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 		<script src="http://localhost/festival/assets/js/main.js"></script>
 	</body>
 </html>
