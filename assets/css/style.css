@@ -413,4 +413,119 @@ nav ul li a.active {
 	width: 100%;
 	height: 100%;
 	border-radius: 15px;
+	-webkit-background-size: cover !important;
+	background-size: cover !important;
+}
+
+/*
+	MOVIE DETAIL
+*/
+
+#movie_detail {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#movie_detail a {
+	margin-top: 30px;
+	margin-bottom: 70px;
+	display: block;
+	color: #afafaf;
+	margin-left: -100px;
+}
+
+#movie_detail .header{
+	text-align: center;
+	position: relative;
+}
+
+#movie_detail .header,
+#movie_detail .info_principale,
+#movie_detail .description,
+#movie_detail .acteurs {
+	margin-bottom: 70px;
+}
+
+#movie_detail .header div {
+	text-align: left;
+	position: absolute;
+	top: 50%;
+	margin-left: -100px;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+#movie_detail .header div h1{
+	margin-bottom: 20px;
+	font-size: 2.5em;
+}
+
+#movie_detail .header div .category_movie {
+	font-size: 1em;
+	line-height: 14px;
+	color: #FFF;
+	left: 15px;
+	top: 10px;
+	border-radius: 15px;
+	padding: 2px 8px;
+}
+
+#movie_detail .header img {
+	width: 100%;
+	border-radius: 15px;
+	opacity: .8;
+}
+
+#movie_detail h2 {
+	margin-left: -100px;
+}
+
+#movie_detail .info_principale p {
+	margin-bottom: 20px;
+	font-weight: 800;
+}
+
+#movie_detail .info_principale p span {
+	color: #afafaf;
+	font-weight: 400;
+}
+
+/*
+	EVENT
+*/
+
+#list_events {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#list_events h2{
+	margin: 70px 0;
+}
+#list_events ul li {
+	width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.1);
+	padding: 10px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+#list_events ul li div {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+#list_events ul li div span {
+	color: #afafaf;
+	font-size: 1rem;
+}
+
+#list_events ul li div p {
+	margin-top: 5px;
+}
+
+#list_events ul li:hover{
+	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.4);
 }
