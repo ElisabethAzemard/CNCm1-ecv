@@ -37,9 +37,9 @@
 		$class_name = "";
 		$text_category = "";
 
-		switch($movie->category)
+		switch($movie->genre)
 		{
-			case 'court_metrage':
+			case 'court métrage court':
 				$class_name = 'court_metrage';
 				$text_category = 'Court Métrage';
 				break;
@@ -57,12 +57,13 @@
 
 		?>
 
-		<div class="oneMovie <?= $movie->category; ?>">
-			<a href="movies/<?= $movie->_id; ?>">
+		<div class="oneMovie <?= $movie->genre; ?>">
+			<!-- <a href="movies/<?= $movie->_id; ?>"> -->
+			<a href="movies/1">
 				<span class="category_movie <?= $class_name; ?>"><?= $text_category; ?></span>
 				<span class="like_movie"><img src="/festival/assets/img/like.png" alt="Like"></span>
 				<span class="title_movie"><?= $movie->name; ?></span>
-				<div class="background_image" style="background:url(/festival/assets/img/<?= $movie->image; ?>) center center no-repeat"></div>
+				<div class="background_image" style="background:url(<?= $movie->image; ?>) center center no-repeat"></div>
 			</a>
 		</div>
 
