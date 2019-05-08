@@ -2,31 +2,34 @@
 	"events": [
 		{
 			"_id": 1,
-			"name": "Mary et la Fleur de la sorcière",
+			"name": "Exposition Arte – Athleticus",
 			"type": "projection",
 			"duration": "datetime",
-			"description": "L’animation japonaise est à l’honneur cette année au Festival d’Annecy ! Pour la célébrer, nous vous invitons à voyager dans l’univers onirique de Mary et la Fleur de la sorcière, premier long métrage de Studio Ponoc. Bien loin des clichés de la sorcière au chapeau pointu et au nez crochu, l’histoire débute avec Mary, une petite fille comme les autres, qui vient tout juste de déménager à la campagne chez sa grand-tante Charlotte. Au détour de ses promenades solitaires dans les champs et les forêts alentour, elle découvre une fleur à la couleur hypnotique et au pouvoir puissant, capable de faire d’elle une sorcière le temps d’une nuit – de quoi la mener jusqu’à Endor, célèbre école de magie nichée bien loin du commun des mortels, au-delà des nuages... Réalisé par Hiromasa Yonebayashi, derrière les créations du studio Ghibli Arrietty, le Petit Monde des chapardeurs et Souvenirs de Marnie, Mary et la Fleur de la sorcière nous transporte dans un monde qui nous semble familier, où tout est pourtant à découvrir. Balais, chat noir et sorcellerie… c’est parti pour une projection envoûtante !"
+			"description": "Ils naissaient de l'esprit de Nicolas Deveaux en 2017, faisaient leur apparition dans une série animée Arte l'année suivante, puis revenaient en avril 2019 pour une deuxième saison... Les improbables animaux acrobates d'Athleticus sont de retour et s'installent à la Volière de l'Impérial ! Venez découvrir de plus près les hippopotames judokas, les autruches gymnastes et les éléphants basketteurs lors d'une exposition ludique, qui fera sourire petits et grands !",
+			"url": "https://www.annecy.org/programme/fiche:rdv-200001501366"
 		},
 		{
 			"_id": 2,
-			"name": "Evenement 2",
-			"type": "projection",
+			"name": "Hommage à Bernard Palacios, créateur d’images animées",
+			"type": "exposition",
 			"duration": "datetime",
-			"description": "Evenement 2"
+			"description": "En parallèle au Festival d'Annecy, l'Auditorium de Seynod propose au grand public de découvrir les tableaux d'une figure phare de l'animation locale : Bernard Palacios. Réalisateur, co-fondateur de l'Atelier d'Animation d'Annecy, de La Fabrique (studio d'animation et maison de production basé dans le Gard) s'essayant depuis peu à l'écriture, cet artiste aux multiples talents a notamment réalisé les décors du long métrage Gwen, le Livre de sable de Jean-François Laguionie. L'exposition s'ouvrira par un vernissage le jeudi 6 juin à 18h30 au Jardin d’hiver de la Mairie de Seynod. Deux courts métrages y seront projetés, Haut pays des Neiges de Bernard Palacios et Nuits blanches de la réalisatrice Nicole Dufour, avant la diffusion en avant-première du long métrage en version restaurée Gwen, le Livre de sable. Exposition du 6 au 28 juin 2019, du lundi au vendredi de 10h à 12h et de 14h à 18h.",
+			"url": "https://www.annecy.org/programme/fiche:rdv-200001501391"
 		},
 		{
 			"_id": 3,
-			"name": "Evenement 3",
+			"name": "L'Épopée artistique de la Trilogie Dragons",
 			"type": "projection",
 			"duration": "datetime",
-			"description": "Evenement 3"
+			"description": "Douze années de travail : c’est le temps qu’il aura fallu aux équipes artistiques du studio DreamWorks Animation pour développer la trilogie Dragons, des tout premiers crayonnés jusqu’à la sortie du dernier opus en février 2019. Douze années d'exploration créative et d'avancées technologiques dans l'animation, dont il reste aujourd'hui trois magnifiques films et des centaines de pièces d'archives. Bonne nouvelle pour tous les fans du duo Harold/Krokmou ! Tandis que la trilogie Dragons se termine, une autre page de cet univers unique s’ouvre, avec l’exposition \"L'Épopée artistique de la Trilogie Dragons\", présentée par DreamWorks Animation en collaboration avec le musée Art Ludique au haras d'Annecy, après une première mondiale à Paris ! C'est Dean DeBlois, le réalisateur des trois films, membre du jury au Festival d'Annecy cette année, qui a soigneusement sélectionné avec ses équipes et Art Ludique les éléments de making of les plus représentatifs et impressionnants pour révéler les dessous de l'aventure au grand public. Plusieurs interviews inédites de l'équipe des films, spécialement réalisées pour l'occasion, viennent compléter l'exposition. Venez découvrir l'envers du décor de Berk et ses joyeux vikings avant de profiter d'une projection de Dragons 3 : Le Monde caché sur le Pâquier le jeudi 13 juin, en présence de Dean DeBlois !"
 		},
 		{
 			"_id": 4,
-			"name": "Evenement 4",
+			"name": "C'est dans la boîte !",
 			"type": "projection",
 			"duration": "datetime",
-			"description": "Evenement 4"
+			"description": "Iconiques mains en forme de U, cheveux amovibles et interchangeables, jambes toujours bien tendues... Les figurines PLAYMOBIL® ont beau avoir un design plutôt minimaliste, cela ne les empêche pas de vivre de grandes aventures – qu'elles soient imaginées par les enfants d'hier et d'aujourd'hui dans leur chambre ou bien par le réalisateur Lino DiSalvo, qui les place à l'affiche du long métrage d'animation très attendu Playmobil : le Film. Présenté dans sa version en cours de production au Festival d'Annecy l'an dernier, le film sera cette année projeté en avant-première mondiale lors de la cérémonie d'ouverture (sur invitation uniquement). Et si le grand public va devoir patienter jusqu'au 7 août pour la sortie en salle du long métrage, un avant-goût en sera donné durant l'exposition \"C'est dans la boîte !\" installée dans la galerie passante du Centre Courier. Vous pourrez commencer à vous imprégner de l'univers du film, à en explorer les dessous, à découvrir comment les équipes sont parvenues à faire évoluer ces petits jouets en personnages animés et, plus généralement, à en apprendre davantage sur le processus de fabrication d'un film d'animation. En avant les histoires !",
+			"url": "https://www.annecy.org/programme/fiche:rdv-200001501245"
 		}
 	]
 }
