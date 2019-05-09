@@ -1,4 +1,3 @@
-<!-- <div id="movie_detail" data-id-movie=<?php if(isset($_GET['id'])) echo $_GET['id'] ;?>></div> -->
 <div id="movie_detail">
 
 <?php
@@ -53,12 +52,14 @@
 
             <div class="description">
                 <h2>Résumé</h2>
-                <!-- TODO : afficher le résumé -->
+                <p><?= $movie->about; ?></p>
             </div>
 
             <div class="acteurs">
                 <h2>Acteurs</h2>
-                <!-- TODO : afficher les acteurs -->
+                <?php if( !empty($movie->actor) ){ ?>
+                    <p>Il n'y pas d'acteur</p>
+                <?php } ?>
             </div>
 
             <?php
