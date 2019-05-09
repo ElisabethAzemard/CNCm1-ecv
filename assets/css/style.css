@@ -200,40 +200,51 @@ header nav ul li a.active {
 	transform: translateX(-50%);
 }
 
-#next-events {
+#list_events_home {
 	padding: 0 40px;
 	margin: 80px 0;
 }
 
-#next-events h3 {
+#list_events_home h3 {
 	text-transform: uppercase;
 	margin-bottom: 40px;
 }
 
-#next-events .oneEvent {
-	width: 90%;
-	height: 100px;
-	margin: 20px auto;
-	background-color: red;
+#list_events_home {
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
-#next-events .oneEvent div {
+#list_events_home h2{
+	margin: 70px 0;
+}
+
+#list_events_home ul li {
+	width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.1);
+	padding: 10px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+#list_events_home ul li div {
 	display: inline-block;
+	margin-right: 50px;
 }
 
-#next-events .oneEvent div:nth-child(1) {
-	width: 20%;
-	height: 100%;
+#list_events_home ul li div span {
+	color: #afafaf;
+	font-size: 1rem;
 }
 
-#next-events .oneEvent div:nth-child(2) {
-	width: 40%;
-	height: 100%;
+#list_events_home ul li div p {
+	margin-top: 5px;
 }
 
-#next-events .oneEvent div:nth-child(3) {
-	width: 40%;
-	height: 100%;
+#list_events_home ul li:hover{
+	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.4);
 }
 
 /* Main */

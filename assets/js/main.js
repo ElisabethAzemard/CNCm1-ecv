@@ -1,7 +1,9 @@
-const imagePath = '/festival/assets/img/';
+const imagePath = './assets/img/';
 
 document.addEventListener('DOMContentLoaded', () =>
 {
+	console.log('Loaded');
+
 	if($('.carousel').length > 0)
 	{
 		

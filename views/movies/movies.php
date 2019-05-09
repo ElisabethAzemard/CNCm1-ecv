@@ -29,7 +29,7 @@
 
 <?php
 
-	$json = file_get_contents('http://localhost/festival/assets/json/movies.json');
+	$json = file_get_contents('./assets/json/movies.json');
 	$objMovies = json_decode($json);
 
 	foreach($objMovies->movies as $movie)
@@ -51,9 +51,9 @@
 		?>
 
 		<div class="oneMovie <?= $class_name; ?>">
-			<a href="movies/<?= str_replace(' ', '_', $movie->name); ?>">
+			<a href="movies/<?= $movie->name; ?>">
 				<span class="category_movie <?= $class_name; ?>"><?= $text_category; ?></span>
-				<span class="like_movie"><img src="/festival/assets/img/like.png" alt="Like"></span>
+				<span class="like_movie"><img src="./assets/img/like.png" alt="Like"></span>
 				<span class="title_movie"><?= $movie->name; ?></span>
 				<div class="background_image" style="background:url(<?= $movie->image; ?>) center center no-repeat"></div>
 			</a>

@@ -1,5 +1,7 @@
 <?php
 
+	setlocale (LC_TIME, 'fr_FR.utf8','fra');
+
 	$route = [
 		'home' => [
 			'route' => '',
@@ -35,7 +37,7 @@
 		]
 	];
 
-	$GLOBALS['image'] = '/festival/assets/img/';
+	$GLOBALS['image'] = './assets/img/';
 
 	if(isset($_GET['action']))
 	{

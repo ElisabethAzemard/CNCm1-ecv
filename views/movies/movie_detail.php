@@ -2,12 +2,12 @@
 
 <?php
 
-	$json = file_get_contents('http://localhost/festival/assets/json/movies.json');
+	$json = file_get_contents('./assets/json/movies.json');
     $objMovies = json_decode($json);
 
 	foreach($objMovies->movies as $movie)
 	{
-		if( isset($_GET['name']) && $movie->name == str_replace('_', ' ', $_GET['name']) )
+		if( isset($_GET['name']) && $movie->name == $_GET['name'] )
 		{
             $class_name = "";
             $text_category = "";
@@ -30,7 +30,7 @@
                     break;
             }
             ?>
-            <a href="/festival/movies">< retour à la liste des films</a>
+            <a href="./movies">< retour à la liste des films</a>
 
             <div class="header">
                 <div>

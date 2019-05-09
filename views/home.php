@@ -7,7 +7,7 @@
 
 <?php
 
-	$json = file_get_contents('http://localhost/festival/assets/json/share-events.json');
+	$json = file_get_contents('../assets/json/share-events.json');
 	$objEvents = json_decode($json);
 
 	foreach($objEvents as $event)
@@ -37,7 +37,7 @@
 
 	<?php
 
-		$json = file_get_contents('http://localhost/festival/assets/json/movies.json');
+		$json = file_get_contents('./assets/json/movies.json');
 		$objMovies = json_decode($json);
 		$countMovie = 0;
 
@@ -78,7 +78,7 @@
 				<div class="oneMovie <?= $class_name; ?>">
 					<div>
 						<div class="background_image" style="background-image:url(<?= $movie->image; ?>)">
-							<span class="like_movie"><img src="/festival/assets/img/like.png" alt="Like"></span>
+							<span class="like_movie"><img src="./assets/img/like.png" alt="Like"></span>
 						</div><!--
 						--><span class="category_movie <?= $class_name; ?>"><?= $text_category; ?></span><!--
 						--><p>Titre :
@@ -87,7 +87,7 @@
 						--><p>Réalisation :
 								<span class="director_movie"><?= substr($stringDirectors, 0, -2); ?></span>
 						</p><!--
-						--><a class="<?= $class_name; ?>" href="movies/<?= str_replace(' ', '_', $movie->name); ?>">Détail</a>
+						--><a class="<?= $class_name; ?>" href="movies/<?= $movie->name; ?>">Détail</a>
 					</div>
 				</div>
 				<?php
@@ -102,40 +102,59 @@
 
 </div>
 
-<div id="next-events">
+<div id="list_events_home">
 	<h3>Les prochains événements</h3>
 
 	<?php
+	    $json = file_get_contents('./assets/json/share-events.json');
+        $objEvents = json_decode($json);
 
-		$json = file_get_contents('http://localhost/festival/assets/json/share-events.json');
-		$objEvents = json_decode($json);
-		$countEvent = 0;
+        function sortFunction( $a, $b ) {
+            return strtotime(substr( $a->startDate, 0, 10)) - strtotime(substr( $b->startDate, 0, 10));
+        }
+        usort($objEvents, "sortFunction");
 
-		foreach($objEvents as $event)
+		$date = 0;
+		$count = 0;
+
+		foreach ($objEvents as $event)
 		{
-			if($countEvent < 3)
+			if( strtotime($event->startDate) > strtotime('now') && $count < 3)
 			{
-		?>
+				if ( substr( $event->startDate, 0, 10) != $date ) {
+					$date = substr( $event->startDate, 0, 10);
+					?>
+					<h2> Evenement du <?= ucfirst(strftime('%A %d %B %Y', strtotime($event->startDate))); ?></h2>
+					
+					<?php
+				}
+				?>
+					<ul>
+						<li>
+							<a href="events/<?= $event->name; ?>">
+								<div>
+									<span>date</span>
+									<p><?= substr( $event->startDate, 0, 5) ?></p>
+								</div>
 
-			<div class="oneEvent">
-				<div>
-					1
-				</div><!--
+								<div>
+									<span>heure</span>
+									<p><?= substr( $event->startDate, 10, 6) ?> - <?= substr( $event->endDate, 10, 6) ?></p>
+								</div>
 
-				--><div>
-					2
-				</div><!--
+								<div>
+									<span>titre de l'evenement</span>
+									<p> <?= $event->name ?></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				<?php
 
-				--><div>
-					3
-				</div>
-			</div>
-
-		<?php
-
-				$countEvent++;
+				$count++;
 			}
-		}
+            
+        }
 
-	?>
+    ?>
 </div>

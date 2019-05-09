@@ -3,12 +3,11 @@ Options +FollowSymlinks
 # Activation du mod rewrite d'Apache
 RewriteEngine On
 
-# Réécriture des URL des articles
-# RewriteRule ^/articles/lire-([0-9]+)-([a-z0-9\-]+)\.html$ /index.php?rub=lireArticle&id=$1
-
 RewriteRule ^index$ ./?action=home
 RewriteRule ^news$ ./?action=news
 RewriteRule ^events$ ./?action=events
+RewriteRule ^events/(.+)$ ./?action=event_detail&name=$1%{QUERYSTRING}
 RewriteRule ^movies$ ./?action=movies
 RewriteRule ^movies/([0-9]+)$ ./?action=movie_detail&id=$1%{QUERYSTRING}
+RewriteRule ^movies/(.+)$ ./?action=movie_detail&name=$1%{QUERYSTRING}
 RewriteRule ^palmares$ ./?action=palmares [L]

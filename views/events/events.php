@@ -1,7 +1,7 @@
 <div id="list_events">
 
     <?php
-	    $json = file_get_contents('http://localhost/festival/assets/json/share-events.json');
+	    $json = file_get_contents('./assets/json/share-events.json');
         $objEvents = json_decode($json);
 
         function sortFunction( $a, $b ) {
@@ -14,7 +14,7 @@
             if ( substr( $event->startDate, 0, 10) != $date ) {
                 $date = substr( $event->startDate, 0, 10);
                 ?>
-                <h2> Evenement du <?= $date ?></h2>
+                <h2> Evenement du <?= ucfirst(strftime('%A %d %B %Y', strtotime($event->startDate))); ?></h2>
                 
                 <?php
             }
