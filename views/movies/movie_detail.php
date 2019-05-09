@@ -6,11 +6,10 @@
 	$json = file_get_contents('http://localhost/festival/assets/json/movies.json');
     $objMovies = json_decode($json);
 
-    foreach($objMovies->movies as $movie) {
-
-        if( isset($_GET['id']) && $movie->_id == $_GET['id'] ) {
-            var_dump( $movie );
-
+	foreach($objMovies->movies as $movie)
+	{
+		if( isset($_GET['name']) && $movie->name == str_replace('_', ' ', $_GET['name']) )
+		{
             $class_name = "";
             $text_category = "";
 

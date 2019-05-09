@@ -66,7 +66,6 @@
 				{
 					foreach($directorsMovie as $director)
 					{
-						var_dump($director);
 						$stringDirectors .= $director->givenName . ' ' . $director->familyName . ', ';
 					}
 				}
@@ -88,7 +87,7 @@
 						--><p>Réalisation :
 								<span class="director_movie"><?= substr($stringDirectors, 0, -2); ?></span>
 						</p><!--
-						--><a class="<?= $class_name; ?>" href="movies/<?= ''/*$movie->_id*/; ?>">Détail</a>
+						--><a class="<?= $class_name; ?>" href="movies/<?= str_replace(' ', '_', $movie->name); ?>">Détail</a>
 					</div>
 				</div>
 				<?php

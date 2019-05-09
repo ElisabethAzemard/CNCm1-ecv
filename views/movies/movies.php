@@ -48,28 +48,10 @@
 			$text_category = 'Long Métrage';
 		}
 
-		/*switch($movie->genre)
-		{
-			case 'court métrage court':
-				$class_name = 'court_metrage';
-				$text_category = 'Court Métrage';
-				break;
-			
-			case 'long_metrage':
-				$class_name = 'long_metrage';
-				$text_category = 'Long Métrage';
-				break;
-				
-			case 'film_TV':
-				$class_name = 'film_TV';
-				$text_category = 'Film TV';
-				break;
-		}*/
-
 		?>
 
 		<div class="oneMovie <?= $class_name; ?>">
-			<a href="movies/1">
+			<a href="movies/<?= str_replace(' ', '_', $movie->name); ?>">
 				<span class="category_movie <?= $class_name; ?>"><?= $text_category; ?></span>
 				<span class="like_movie"><img src="/festival/assets/img/like.png" alt="Like"></span>
 				<span class="title_movie"><?= $movie->name; ?></span>
