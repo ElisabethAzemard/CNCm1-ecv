@@ -17,12 +17,12 @@
 			<p>Longs métrages</p>
 		</div>
 	</div><!--
-	--><div data-filter=".film_TV" class="film_TV">
+	--><!--<div data-filter=".film_TV" class="film_TV">
 		<div>
 			<img src="<?php echo $GLOBALS['image'] . '/television.png'; ?>" alt="">
 			<p>Films TV et commande</p>
 		</div>
-	</div>
+	</div>-->
 </div>
 
 <div id="list_movies">
@@ -37,7 +37,18 @@
 		$class_name = "";
 		$text_category = "";
 
-		switch($movie->genre)
+		if(strstr($movie->genre, 'court métrage'))
+		{
+			$class_name = 'court_metrage';
+			$text_category = 'Court Métrage';
+		}
+		else if(strstr($movie->genre, 'long métrage'))
+		{
+			$class_name = 'long_metrage';
+			$text_category = 'Long Métrage';
+		}
+
+		/*switch($movie->genre)
 		{
 			case 'court métrage court':
 				$class_name = 'court_metrage';
@@ -53,12 +64,11 @@
 				$class_name = 'film_TV';
 				$text_category = 'Film TV';
 				break;
-		}
+		}*/
 
 		?>
 
-		<div class="oneMovie <?= $movie->genre; ?>">
-			<!-- <a href="movies/<?= $movie->_id; ?>"> -->
+		<div class="oneMovie <?= $class_name; ?>">
 			<a href="movies/1">
 				<span class="category_movie <?= $class_name; ?>"><?= $text_category; ?></span>
 				<span class="like_movie"><img src="/festival/assets/img/like.png" alt="Like"></span>

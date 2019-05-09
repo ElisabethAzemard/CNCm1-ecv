@@ -48,36 +48,37 @@
 				$class_name = "";
 				$text_category = "";
 
-				switch($movie->category)
+				if(strstr($movie->genre, 'court métrage'))
 				{
-					case 'court_metrage':
-						$class_name = 'court_metrage';
-						$text_category = 'Court Métrage';
-						break;
-					
-					case 'long_metrage':
-						$class_name = 'long_metrage';
-						$text_category = 'Long Métrage';
-						break;
-						
-					case 'film_TV':
-						$class_name = 'film_TV';
-						$text_category = 'Film TV';
-						break;
+					$class_name = 'court_metrage';
+					$text_category = 'Court Métrage';
+				}
+				else if(strstr($movie->genre, 'long métrage'))
+				{
+					$class_name = 'long_metrage';
+					$text_category = 'Long Métrage';
 				}
 
 				$directorsMovie = $movie->director;
 				$stringDirectors = "";
 
-				foreach($directorsMovie as $director)
+				if(gettype($directorsMovie) === 'array')
 				{
-					$stringDirectors .= $director->givenName . ' ' . $director->familyName . ', ';
+					foreach($directorsMovie as $director)
+					{
+						var_dump($director);
+						$stringDirectors .= $director->givenName . ' ' . $director->familyName . ', ';
+					}
+				}
+				else
+				{
+					$stringDirectors .= $directorsMovie->name . ' ' . $directorsMovie->familyName . ', ';
 				}
 
 				?>
-				<div class="oneMovie <?= $movie->category; ?>">
+				<div class="oneMovie <?= $class_name; ?>">
 					<div>
-						<div class="background_image" style="background:url(/festival/assets/img/<?= $movie->image; ?>) center center no-repeat">
+						<div class="background_image" style="background-image:url(<?= $movie->image; ?>)">
 							<span class="like_movie"><img src="/festival/assets/img/like.png" alt="Like"></span>
 						</div><!--
 						--><span class="category_movie <?= $class_name; ?>"><?= $text_category; ?></span><!--
@@ -87,7 +88,7 @@
 						--><p>Réalisation :
 								<span class="director_movie"><?= substr($stringDirectors, 0, -2); ?></span>
 						</p><!--
-						--><a class="<?= $movie->category; ?>" href="movies/<?= $movie->_id; ?>">Détail</a>
+						--><a class="<?= $class_name; ?>" href="movies/<?= ''/*$movie->_id*/; ?>">Détail</a>
 					</div>
 				</div>
 				<?php
